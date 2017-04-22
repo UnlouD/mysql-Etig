@@ -1,4 +1,4 @@
-package com.rr.controller;
+package control;
 
 import javafx.beans.property.*;
 
