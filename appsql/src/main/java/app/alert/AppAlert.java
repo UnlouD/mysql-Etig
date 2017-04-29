@@ -4,7 +4,7 @@ import javafx.scene.control.Alert;
 
 /**
  *
- * @author Р­С‚РёРіСЌР»
+ * @author Этигэл
  */
 
 public class AppAlert {

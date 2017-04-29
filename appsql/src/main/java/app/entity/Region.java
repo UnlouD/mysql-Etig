@@ -4,8 +4,10 @@ import javax.persistence.*;
 import java.util.Collection;
 
 /**
- * Created by RRM on 20.04.17.
+ *
+ * @author Этигэл
  */
+
 @Entity
 public class Region {
     private int id;

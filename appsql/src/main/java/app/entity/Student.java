@@ -4,8 +4,10 @@ import javax.persistence.*;
 import java.sql.Date;
 
 /**
- * Created by RRM on 20.04.17.
+ *
+ * @author Этигэл
  */
+
 @Entity
 public class Student {
     private String gender;

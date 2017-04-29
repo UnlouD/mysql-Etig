@@ -5,22 +5,22 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox stylesheets="/css/main.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
       prefHeight="405.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.resud.controllers.ControllerStudent">
+      fx:controller="app.Controller">
 
     <children>
         <HBox prefHeight="100.0" prefWidth="200.0">
             <children>
                 <AnchorPane prefHeight="100.0" prefWidth="606.0">
                     <children>
-                        <Button layoutX="172.0" layoutY="32.0" mnemonicParsing="false" onAction="#selectDB"
+                        <Button layoutX="172.0" layoutY="32.0" mnemonicParsing="false" onAction="#createDB"
                                 text="SELECT">
                             <padding>
                                 <Insets bottom="10.0" left="25.0" right="25.0" top="10.0"/>
                             </padding>
                         </Button>
-                        <Button layoutX="14.0" layoutY="32.0" mnemonicParsing="false" onAction="#insertDB"
+                        <Button layoutX="14.0" layoutY="32.0" mnemonicParsing="false" onAction="#readDB"
                                 text="INSERT">
                             <padding>
                                 <Insets bottom="10.0" left="25.0" right="25.0" top="10.0"/>

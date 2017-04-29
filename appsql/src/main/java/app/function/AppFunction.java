@@ -1,6 +1,6 @@
 package app.function;
 
-import control.StudentService;
+import сontrol.StudentService;
 import app.entity.Student;
 
 import javax.persistence.EntityManager;
