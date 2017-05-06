@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8"
+      fx:controller="app.control.StudentController">
+    <children>
+        <ToolBar prefHeight="40.0" prefWidth="200.0">
+            <items>
+                <Button mnemonicParsing="false" onAction="#add" prefHeight="27.0" prefWidth="140.0" text="Добавить"/>
+                <Button mnemonicParsing="false" onAction="#update" prefHeight="27.0" prefWidth="140.0" text="Обновить"/>
+                <Button mnemonicParsing="false" onAction="#delete" prefHeight="27.0" prefWidth="140.0" text="Удалить"/>
+                <Button mnemonicParsing="false" onAction="#print" prefHeight="27.0" prefWidth="140.0" text="Вывести"/>
+                <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="132.0" text="Страна" onAction="#country"/>
+                <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="132.0" text="Регион" onAction="#region"/>
+                <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="132.0" text="Город" onAction="#city"/>
+            </items>
+        </ToolBar>
+        <SplitPane dividerPositions="0.3" prefHeight="560.0" prefWidth="1000.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <TextField fx:id="fxId" layoutX="8.0" layoutY="12.0" prefHeight="27.0" prefWidth="280.0"
+                                   promptText="№"/>
+                        <TextField fx:id="fxFirstname" layoutX="8.0" layoutY="51.0" prefHeight="27.0" prefWidth="280.0"
+                                   promptText="Имя"/>
+                        <TextField fx:id="fxSurname" layoutX="8.0" layoutY="90.0" prefHeight="27.0" prefWidth="280.0"
+                                   promptText="Фамилия"/>
+                        <ComboBox fx:id="fxGender" layoutX="8.0" layoutY="127.0" prefHeight="27.0" prefWidth="280.0"
+                                  promptText="Пол"/>
+                        <DatePicker fx:id="fxBirthday" layoutX="8.0" layoutY="168.0" prefHeight="27.0" prefWidth="280.0"
+                                    promptText="Дата рождения"/>
+                        <TextField fx:id="fxAddress" layoutX="8.0" layoutY="207.0" prefHeight="27.0" prefWidth="280.0"
+                                   promptText="Адрес"/>
+                        <TextField fx:id="fxPhone" layoutX="8.0" layoutY="248.0" prefHeight="27.0" prefWidth="280.0"
+                                   promptText="Номер телефона"/>
+                        <ComboBox fx:id="fxCity" layoutX="8.0" layoutY="287.0" prefHeight="27.0" prefWidth="280.0"
+                                  promptText="Город"/>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <TableView fx:id="tbStudent" layoutY="-2.0" onMouseClicked="#pick" prefHeight="560.0"
+                                   prefWidth="695.0">
+                            <columns>
+                                <TableColumn fx:id="tcId" prefWidth="40.0" text="№"/>
+                                <TableColumn fx:id="tcSurname" prefWidth="90.0" text="Фамилия"/>
+                                <TableColumn fx:id="tcName" prefWidth="90.0" text="Имя"/>
+                                <TableColumn fx:id="tcGender" prefWidth="75.0" text="Пол"/>
+                                <TableColumn fx:id="tcBirthday" prefWidth="110.0" text="Дата рождения"/>
+                                <TableColumn fx:id="tcCity" minWidth="4.0" text="Город"/>
+                                <TableColumn fx:id="tcAddress" minWidth="4.0" prefWidth="90.0" text="Адрес"/>
+                                <TableColumn fx:id="tcPhone" minWidth="4.0" prefWidth="120.0" text="Телефон"/>
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</VBox>
